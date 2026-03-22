@@ -3,7 +3,9 @@
 **Результат: 0.80861 | Место 462 из 12 000+ команд | Топ 4%**
 
 ---
-📓 [Открыть ноутбук](./titanic_analysis.ipynb)
+📓 [Открыть ноутбук (RU)](./titanic_analysis_ru.ipynb) | [Open notebook (EN)](./titanic_analysis_en.ipynb)
+
+🏆 [Kaggle notebook (с графиками)](https://www.kaggle.com/code/rambo232/titanic-feature-engineering-ensemble)
 
 ## О проекте
 
