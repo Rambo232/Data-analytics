@@ -111,3 +111,51 @@ jupyter notebook titanic_ru.ipynb
 ```
 
 **Зависимости:** pandas, numpy, matplotlib, seaborn, scikit-learn, scipy
+
+
+
+---
+
+## English version
+
+**Score: 0.80861 | Rank 462 out of 12,000+ teams | Top 4%**
+
+### About
+This is my solution to the [Titanic - Machine Learning from Disaster](https://www.kaggle.com/c/titanic) competition.
+
+**Goal** — not just to get a high score, but to understand which factors actually influenced passenger survival and build a transparent model that confirms these insights.
+
+Models chosen intentionally: **Logistic Regression** + **Random Forest** — interpretable enough to explain every prediction without a "black box".
+
+### Key insights from EDA
+
+| Observation | Meaning |
+|-------------|---------|
+| Women survived 3.5x more often than men | "Women and children first" was strictly enforced |
+| Survival: 1st class 63%, 3rd class 24% | Cabin location = physical proximity to lifeboats |
+| U-shaped curve by family size | Optimal 2–4 people — solo and large families fared worse |
+| Cherbourg (C) effect is a confounder | Explained entirely by higher 1st class proportion |
+
+### From insights to features
+
+| Hypothesis | Feature | Rationale |
+|------------|---------|-----------|
+| Family evacuated as one unit | `Family_Survival` | LOO group survival signal |
+| Title = age + social status | `Title_TE` | Target encoding instead of arbitrary labels |
+| Young 1st class passengers — priority group | `AgePclass_v2` | Age / Pclass² |
+| Cabin presence = proximity to lifeboats | `HasCabin`, `Deck` | Physical location proxy |
+
+### Score progression
+
+| Step | Change | Score |
+|------|--------|-------|
+| Baseline (10 features) | — | 0.79665 |
+| + Family_Survival | LOO group signal | +0.005 |
+| + Title_TE | Target encoding | +0.002 |
+| + AgePclass_v2, Fare_Pclass | Nonlinear interactions | +0.002 |
+| + CabinSide | Side of the ship | +0.001 |
+| Ensemble + threshold 0.51 | Final calibration | +0.0016 |
+| **Final** | | **0.80861** |
+
+### Stack
+Python, pandas, numpy, scikit-learn, matplotlib, seaborn, scipy
