@@ -1,7 +1,7 @@
 # House Prices – Advanced Regression Techniques  
 ### Analytical Solution: Top 5% on Kaggle (RMSLE = 0.19048)
 
-> 📌 **Note:** The Russian version of this README is available [below](#-русский-версия).
+> 📌 **Note:** The Russian version of this README is available below.
 
 ---
 
