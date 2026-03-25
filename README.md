@@ -20,7 +20,7 @@
 ### Project Overview
 This project solves the Kaggle competition **House Prices – Advanced Regression Techniques**. The objective is to predict the final sale price (`SalePrice`) of residential homes using 79 descriptive features. The metric is **RMSLE**, which penalises relative error, making it suitable for a wide price range.
 
-The final ensemble achieves **RMSLE = 0.19048** on the public leaderboard, placing in the **top 5%** of over 8,000 teams. The solution emphasises **analytical rigour**, **interpretability**, and **business applicability**.
+The final ensemble achieves **RMSLE = 0.19048** on the public leaderboard, placing in the **top 5%** of over 4000 + teams. The solution emphasises **analytical rigour**, **interpretability**, and **business applicability**.
 
 ### Analytical Approach
 
@@ -76,7 +76,7 @@ Each engineered feature was validated by correlation with `log(SalePrice)`; `Tot
 ### Описание проекта
 Это решение соревнования Kaggle **House Prices – Advanced Regression Techniques**. Задача – предсказать итоговую цену продажи дома (`SalePrice`) по 79 признакам. Метрика – **RMSLE**, чувствительная к относительной ошибке, что важно для широкого диапазона цен.
 
-Финальный ансамбль достигает **RMSLE = 0.19048** на публичном лидерборде (топ‑5% из 8000+ команд). Решение акцентирует **аналитический подход**, **интерпретируемость** и **бизнес‑применимость**.
+Финальный ансамбль достигает **RMSLE = 0.19048** на публичном лидерборде (топ‑5% из 4000+ команд). Решение акцентирует **аналитический подход**, **интерпретируемость** и **бизнес‑применимость**.
 
 ### Аналитический подход
 
